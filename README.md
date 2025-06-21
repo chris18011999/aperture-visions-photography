@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Photography Website Project Outline: Aperture Visions Photography
 
-## Getting Started
+This document outlines the requirements and design specifications for a professional photography website, "Aperture Visions Photography," with a strong emphasis on showcasing high-quality images.
 
-First, run the development server:
+## 1. Coherent Color Scheme
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The chosen color palette is designed to be sophisticated, natural, and non-distracting, ensuring that the photographs remain the central focus.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Primary Accent:** `#A3B18A` (Sage Green) - For subtle navigation, borders, and secondary headings.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Secondary Accent:** `#DAD7CD` (Light Beige/Off-White) - Ideal for clean backgrounds on content blocks.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Text/Dark Contrast:** `#344E41` (Deep Forest Green) - Used for main text, primary headings, and strong contrasts.
 
-## Learn More
+- **Background:** `#FAFAFA` (Pure Off-white) - The dominant background color for a crisp, clean canvas.
 
-To learn more about Next.js, take a look at the following resources:
+- **Highlight/Interactive:** `#588157` (Earthy Green) - For buttons, hover states, and interactive elements.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 2. Website Structure & Content (3 Pages)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The website will consist of three distinct pages, each serving a specific purpose while maintaining the overarching professional and image-centric theme.
 
-## Deploy on Vercel
+### 2.1. Home Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The Home Page's primary objective is to make an immediate visual impact and offer a glimpse into the company's photographic style.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Hero Section:**
+
+  - Full-width, high-resolution hero image or a subtle, auto-playing video montage (no sound).
+
+  - Minimal, elegant tagline overlay: e.g., "Where Every Shot Tells a Story" or "Crafting Visual Narratives."
+
+- **Featured Work Gallery:**
+
+  - A clean, responsive grid or carousel presenting a curated selection of 6-9 diverse, high-quality photographs.
+
+  - Images should be clickable to reveal a larger view (e.g., in a lightbox).
+
+  - Minimal or no text descriptions for individual images; the focus is purely on the visual.
+
+- **Brief Introduction:**
+
+  - A concise, impactful paragraph introducing the company's core philosophy and passion for photography.
+
+  - A subtle call to action (e.g., "View Full Portfolio" or "Learn More About Us") as a button or text link.
+
+### 2.2. Portfolio Page
+
+This page is the core visual showcase of the photographer's work.
+
+- **Categorized Galleries:**
+
+  - Organize photographs into clear, distinct categories (e.g., "Portraits," "Landscapes," "Events," "Weddings," "Products," etc.).
+
+  - Users should be able to easily switch between categories (e.g., via filter buttons or navigation links).
+
+- **High-Resolution Image Grids:**
+
+  - Each category will feature a responsive, elegant grid layout of high-quality, full-resolution images.
+
+  - Emphasis on large, visually impactful thumbnails or evenly spaced images.
+
+- **Minimalist Presentation:**
+
+  - When an image is clicked, it should open in a lightbox or full-screen view.
+
+  - Minimal UI elements (e.g., navigation arrows, close button only) to ensure full immersion in the photograph.
+
+  - No lengthy captions or accompanying text for individual images, unless absolutely essential for context.
+
+### 2.3. About Us Page
+
+This page provides essential background information while maintaining a professional and understated tone.
+
+- **Our Philosophy:**
+
+  - A concise section detailing the company's artistic vision, approach to photography, and what differentiates them.
+
+  - Focus on the passion, commitment, and unique perspective in their craft.
+
+- **Meet the Photographer:**
+
+  - A professional headshot of the photographer (or team).
+
+  - A brief, personal narrative about their journey into photography, inspirations, and dedication to clients. Maintain a professional and engaging tone.
+
+- **No Contact Form:** As explicitly requested, this page will not include any contact forms.
+
+## 3. Technical Considerations (Next.js 15 & Tailwind 4)
+
+- **Framework:** Built using **Next.js 15**.
+
+- **Styling:** Utilizes **Tailwind CSS 4** for a utility-first, responsive design approach.
+
+- **Image Optimization:** Leverage Next.js's native image optimization features (`next/image`) for efficient loading of high-resolution images.
+
+- **Responsiveness:** All layouts and components must be fully responsive, adapting seamlessly to desktop, tablet, and mobile screens, ensuring images look stunning on any device.
