@@ -5,21 +5,14 @@ import Navbar from "@/components/navigation/navbar";
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarHeader,
+  SidebarFooter, SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarProvider,
-  SidebarTrigger,
+  SidebarMenuButton, SidebarProvider,
+  SidebarTrigger
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import {
-  PanelLeftCloseIcon,
-  SidebarCloseIcon,
-  XIcon,
-  XSquareIcon,
+  XIcon
 } from "lucide-react";
 import { MENU_ITEMS } from "@/constants";
 
@@ -36,7 +29,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: {
     template: "%s | Aperture Visions Photography",
-    absolute: "Aperture Visions Photography",
+    default: "Aperture Visions Photography",
   },
   description:
     "Aperture Visions Photography is a photography studio that specializes in capturing the beauty of the world.",
